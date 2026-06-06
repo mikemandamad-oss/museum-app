@@ -1,0 +1,136 @@
+
+:root {
+  --bg:      #f5f0e8;
+  --surface: #ffffff;
+  --accent:  #8b2020;
+  --accent2: #c0392b;
+  --text:    #1a1a1a;
+  --muted:   #6b6b6b;
+  --border:  #ddd5c4;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Source Sans 3', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--accent);
+  color: white;
+  padding: 40px 20px 30px;
+  text-align: center;
+}
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  letter-spacing: 2px;
+}
+header p { margin-top: 8px; font-size: 1rem; opacity: 0.85; }
+
+/* ---- Κεντρικό container ---- */
+main { max-width: 960px; margin: 0 auto; padding: 40px 20px; }
+
+/* ---- Τίτλοι ενοτήτων ---- */
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  color: var(--accent);
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+.loading { color: var(--muted); font-style: italic; padding: 10px 0; }
+
+/ ---- Πίνακας τμημάτων ---- /
+#departments-section { margin-bottom: 50px; }
+
+#dept-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surface);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+#dept-table th {
+  background-color: var(--accent);
+  color: white;
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+}
+#dept-table td { padding: 10px 16px; border-bottom: 1px solid var(--border); }
+#dept-table tr:nth-child(even) td { background-color: #faf6f0; }
+
+/ ---- Κάρτες έργων ---- /
+#artworks-section { margin-bottom: 50px; }
+
+#artworks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+/ ---- Μορφοποίηση κάρτας έργου ---- /
+.artwork-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.artwork-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.artwork-info { padding: 14px 16px; }
+.artwork-title { font-family: 'Playfair Display', serif; font-size: 1rem; margin-bottom: 4px; }
+.artwork-creator { font-size: 0.875rem; color: var(--muted); margin-bottom: 12px; }
+
+/ ---- Κουμπί εμφάνισης εικόνας ---- /
+.btn-show-image {
+  display: inline-block;
+  padding: 7px 16px;
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-family: 'Source Sans 3', sans-serif;
+  transition: background-color 0.2s;
+}
+.btn-show-image:hover { background-color: var(--accent2); }
+
+.artwork-image {
+  display: none;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-top: 1px solid var(--border);
+  margin-top: 10px;
+}
+
+.no-image-msg {
+  display: none;
+  margin-top: 10px;
+  font-size: 0.82rem;
+  color: var(--muted);
+  font-style: italic;
+  padding: 4px 0;
+}
+
+/ ---- Footer ---- /
+footer {
+  text-align: center;
+  padding: 24px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+footer a { color: var(--accent); }
