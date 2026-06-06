@@ -1,4 +1,4 @@
-// Μεταβλητές χρωμάτων 
+/* ---- Μεταβλητές χρωμάτων ---- */
 :root {
   --bg:      #f5f0e8;
   --surface: #ffffff;
@@ -9,6 +9,7 @@
   --border:  #ddd5c4;
 }
 
+/* ---- Βασικό reset ---- */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
@@ -18,9 +19,10 @@ body {
   line-height: 1.6;
 }
 
+/* ---- Κεφαλίδα ---- */
 header {
   background-color: var(--accent);
-  color: red;
+  color: white; /* Διορθώθηκε σε λευκό για να ταιριάζει αισθητικά */
   padding: 40px 20px 30px;
   text-align: center;
 }
@@ -31,26 +33,26 @@ header h1 {
 }
 header p { margin-top: 8px; font-size: 1rem; opacity: 0.85; }
 
-
+/* ---- Κεντρικό container ---- */
 main { max-width: 960px; margin: 0 auto; padding: 40px 20px; }
 
-// Τίτλοι ενοτήτων 
+/* ---- Τίτλοι ενοτήτων ---- */
 .section-title {
   font-family: 'Playfair Display', serif;
   font-size: 1.6rem;
   color: var(--accent);
   border-bottom: 2px solid var(--border);
   padding-bottom: 8px;
-  margin-bottom: 80px;
-}
-#artworks-section .section-title {
-  margin-top: 80px; 
+  margin-bottom: 24px; /* Σωστή απόσταση του τίτλου από το περιεχόμενο της ενότητάς του */
 }
 
+/* ---- Μήνυμα φόρτωσης ---- */
 .loading { color: var(--muted); font-style: italic; padding: 10px 0; }
 
-// Πίνακας τμημάτων
-#departments-section { margin-bottom: 100px; }
+/* ---- Ενότητα 1: Πίνακας τμημάτων ---- */
+#departments-section { 
+  margin-bottom: 0; /* Μηδενίζουμε το margin για να μην μπερδεύεται */
+}
 
 #dept-table {
   width: 100%;
@@ -68,18 +70,20 @@ main { max-width: 960px; margin: 0 auto; padding: 40px 20px; }
 #dept-table td { padding: 10px 16px; border-bottom: 1px solid var(--border); }
 #dept-table tr:nth-child(even) td { background-color: #faf6f0; }
 
-// Κάρτες έργων 
+/* ---- Ενότητα 2: Κάρτες έργων (Εδώ γίνεται ο διαχωρισμός) ---- */
 #artworks-section { 
-  margin-top: 80px;    
+  /* Χρησιμοποιούμε padding αντί για margin για να σπρώξουμε ΣΙΓΟΥΡΑ την ενότητα προς τα κάτω */
+  padding-top: 80px;  
   margin-bottom: 50px; 
 }
+
 #artworks-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 24px;
 }
 
-// Εμφάνιση - μορφοποίηση κάρτας έργου 
+/* ---- Εμφάνιση - μορφοποίηση κάρτας έργου ---- */
 .artwork-card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -97,7 +101,7 @@ main { max-width: 960px; margin: 0 auto; padding: 40px 20px; }
 .artwork-title { font-family: 'Playfair Display', serif; font-size: 1rem; margin-bottom: 4px; }
 .artwork-creator { font-size: 0.875rem; color: var(--muted); margin-bottom: 12px; }
 
-// Κουμπί εμφάνισης εικόνας 
+/* ---- Κουμπί εμφάνισης εικόνας ---- */
 .btn-show-image {
   display: inline-block;
   padding: 7px 16px;
@@ -130,7 +134,7 @@ main { max-width: 960px; margin: 0 auto; padding: 40px 20px; }
   padding: 4px 0;
 }
 
-// Μορφοποίηση footer
+/* ---- Μορφοποίηση footer ---- */
 footer {
   text-align: center;
   padding: 24px;
