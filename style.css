@@ -47,7 +47,7 @@ main { max-width: 960px; margin: 0 auto; padding: 40px 20px; }
 .loading { color: var(--muted); font-style: italic; padding: 10px 0; }
 
 // Πίνακας τμημάτων
-#departments-section { margin-bottom: 50px; }
+#departments-section { margin-bottom: 100px; }
 
 #dept-table {
   width: 100%;
