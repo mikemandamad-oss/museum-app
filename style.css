@@ -20,7 +20,7 @@ body {
 
 header {
   background-color: var(--accent);
-  color: white;
+  color: red;
   padding: 40px 20px 30px;
   text-align: center;
 }
