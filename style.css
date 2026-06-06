@@ -1,4 +1,4 @@
-
+// Μεταβλητές χρωμάτων 
 :root {
   --bg:      #f5f0e8;
   --surface: #ffffff;
@@ -31,10 +31,10 @@ header h1 {
 }
 header p { margin-top: 8px; font-size: 1rem; opacity: 0.85; }
 
-/* ---- Κεντρικό container ---- */
+
 main { max-width: 960px; margin: 0 auto; padding: 40px 20px; }
 
-/* ---- Τίτλοι ενοτήτων ---- */
+// Τίτλοι ενοτήτων 
 .section-title {
   font-family: 'Playfair Display', serif;
   font-size: 1.6rem;
@@ -46,7 +46,7 @@ main { max-width: 960px; margin: 0 auto; padding: 40px 20px; }
 
 .loading { color: var(--muted); font-style: italic; padding: 10px 0; }
 
-/ ---- Πίνακας τμημάτων ---- /
+// Πίνακας τμημάτων
 #departments-section { margin-bottom: 50px; }
 
 #dept-table {
@@ -65,7 +65,7 @@ main { max-width: 960px; margin: 0 auto; padding: 40px 20px; }
 #dept-table td { padding: 10px 16px; border-bottom: 1px solid var(--border); }
 #dept-table tr:nth-child(even) td { background-color: #faf6f0; }
 
-/ ---- Κάρτες έργων ---- /
+// Κάρτες έργων 
 #artworks-section { margin-bottom: 50px; }
 
 #artworks-grid {
@@ -74,7 +74,7 @@ main { max-width: 960px; margin: 0 auto; padding: 40px 20px; }
   gap: 24px;
 }
 
-/ ---- Μορφοποίηση κάρτας έργου ---- /
+// Εμφάνιση - μορφοποίηση κάρτας έργου 
 .artwork-card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -92,7 +92,7 @@ main { max-width: 960px; margin: 0 auto; padding: 40px 20px; }
 .artwork-title { font-family: 'Playfair Display', serif; font-size: 1rem; margin-bottom: 4px; }
 .artwork-creator { font-size: 0.875rem; color: var(--muted); margin-bottom: 12px; }
 
-/ ---- Κουμπί εμφάνισης εικόνας ---- /
+// Κουμπί εμφάνισης εικόνας 
 .btn-show-image {
   display: inline-block;
   padding: 7px 16px;
@@ -125,7 +125,7 @@ main { max-width: 960px; margin: 0 auto; padding: 40px 20px; }
   padding: 4px 0;
 }
 
-/ ---- Footer ---- /
+// Μορφοποίηση footer
 footer {
   text-align: center;
   padding: 24px;
