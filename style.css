@@ -41,7 +41,7 @@ main { max-width: 960px; margin: 0 auto; padding: 40px 20px; }
   color: var(--accent);
   border-bottom: 2px solid var(--border);
   padding-bottom: 8px;
-  margin-bottom: 20px;
+  margin-bottom: 80px;
 }
 
 .loading { color: var(--muted); font-style: italic; padding: 10px 0; }
