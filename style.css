@@ -22,7 +22,7 @@ body {
 /* ---- Κεφαλίδα ---- */
 header {
   background-color: var(--accent);
-  color: white; /* Διορθώθηκε σε λευκό για να ταιριάζει αισθητικά */
+  color: white; 
   padding: 40px 20px 30px;
   text-align: center;
 }
@@ -33,7 +33,6 @@ header h1 {
 }
 header p { margin-top: 8px; font-size: 1rem; opacity: 0.85; }
 
-/* ---- Κεντρικό container ---- */
 main { max-width: 960px; margin: 0 auto; padding: 40px 20px; }
 
 /* ---- Τίτλοι ενοτήτων ---- */
@@ -43,16 +42,15 @@ main { max-width: 960px; margin: 0 auto; padding: 40px 20px; }
   color: var(--accent);
   border-bottom: 2px solid var(--border);
   padding-bottom: 8px;
-  margin-bottom: 24px; /* Σωστή απόσταση του τίτλου από το περιεχόμενο της ενότητάς του */
+  margin-bottom: 24px; 
 }
 
 /* ---- Μήνυμα φόρτωσης ---- */
 .loading { color: var(--muted); font-style: italic; padding: 10px 0; }
 
-/* ---- Ενότητα 1: Πίνακας τμημάτων ---- */
+/* ---- Πίνακας τμημάτων ---- */
 #departments-section { 
-  margin-bottom: 0; /* Μηδενίζουμε το margin για να μην μπερδεύεται */
-}
+  margin-bottom: 0; }
 
 #dept-table {
   width: 100%;
@@ -70,9 +68,8 @@ main { max-width: 960px; margin: 0 auto; padding: 40px 20px; }
 #dept-table td { padding: 10px 16px; border-bottom: 1px solid var(--border); }
 #dept-table tr:nth-child(even) td { background-color: #faf6f0; }
 
-/* ---- Ενότητα 2: Κάρτες έργων (Εδώ γίνεται ο διαχωρισμός) ---- */
+/* ----Κάρτες έργων ---- */
 #artworks-section { 
-  /* Χρησιμοποιούμε padding αντί για margin για να σπρώξουμε ΣΙΓΟΥΡΑ την ενότητα προς τα κάτω */
   padding-top: 80px;  
   margin-bottom: 50px; 
 }
