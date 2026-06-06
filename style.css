@@ -66,8 +66,10 @@ main { max-width: 960px; margin: 0 auto; padding: 40px 20px; }
 #dept-table tr:nth-child(even) td { background-color: #faf6f0; }
 
 // Κάρτες έργων 
-#artworks-section { margin-bottom: 50px; }
-
+#artworks-section { 
+  margin-top: 80px;    
+  margin-bottom: 50px; 
+}
 #artworks-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
